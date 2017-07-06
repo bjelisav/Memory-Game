@@ -1,0 +1,110 @@
+*{padding: 0;margin: 0;}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.wrapp {
+  width: 700px;
+  height: 600px;
+  margin: 50px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  margin: 0px auto;
+  box-shadow: 2px 2px 5px cadetblue, -2px -2px 5px cadetblue;
+  float: right;
+}
+
+.levels {
+  display: block;
+  height: 80px;
+  width: 150px;
+  position: relative;
+  margin: 20px auto;
+  color: cadetblue;
+  text-align: left;
+  box-shadow: 1px 1px 1px #ddd, -1px -1px 1px #ddd;
+  padding-top: 10px;
+}
+
+.start {
+  width: 150px;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  font-size: 40px;
+  box-shadow: 1px 1px 1px #ddd, -1px -1px 1px #ddd;
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+  transform: translateY(10px);
+  cursor: pointer;
+  color: cadetblue;
+}
+.start:hover{
+	background: cadetblue;
+	color: white;
+	text-shadow: 1px 1px 1px white;
+	transition: all .4s;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.back {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 1s;
+  transform: perspective(900px) rotateY(180deg);
+}
+
+.front{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: cadetblue;
+  backface-visibility: hidden;
+  transition: transform 1s;
+
+}
+
+.countdown {
+  margin: 20px auto;
+  width: 200px;
+  height: 75px;
+  display: none;
+  box-shadow: 1px 1px 1px cadetblue, -1px -1px 1px cadetblue;
+  color: cadetblue;
+  font-size: 50px;
+  line-height: 75px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  box-sizing: border-box;
+  height: 400px;
+  width: 290px;
+  float: left;
+  padding: 10px;
+  box-shadow: 1px 1px 1px cadetblue, -1px -1px 1px cadetblue;
+}
+/*.box:hover > .front {
+  transform: perspective(900px) rotateY(180deg);
+}
+.box:hover > .back {
+  transform: perspective(900px) rotateY(0deg);
+}*/
